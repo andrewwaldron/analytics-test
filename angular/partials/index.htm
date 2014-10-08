@@ -1,0 +1,13 @@
+<div class="header">
+	Fuse Ping Pong Score Board
+</div>
+
+
+<div class="top-scores">
+	<div class="top-item" ng-repeat="score in topScores">
+		<div class="name"><a href="javascript:" ng-href="#/team/{{score.teamId}}" ng-bind="score.teamName"></a></div>
+		<div class="score" ng-bind="score.score"></div>
+	</div>
+</div>
+<div class="sep"></div>
+<a href="#/team/">See All Teams&gt;</a>

@@ -1,0 +1,27 @@
+
+<div ng-if="teamId">
+	<h1>Team Id: {{teamId}}</h1>
+	<div class="datafield">
+		<div class="label">Team Name</div>
+		<div class="value">{{teamDetails.teamName}}</div>
+	</div>
+	<div class="datafield">
+		<div class="label">Team Score</div>
+		<div class="value">{{teamDetails.score}}</div>
+	</div>
+</div>
+<div ng-else>
+
+	<div ng-repeat="teamDetails in teams">
+		<h1>Team Id: {{teamDetails.teamId}}</h1>
+		<div class="datafield">
+			<div class="label">Team Name</div>
+			<div class="value">{{teamDetails.teamName}}</div>
+		</div>
+		<div class="datafield">
+			<div class="label">Team Name</div>
+			<div class="value">{{teamDetails.score}}</div>
+		</div>
+		<div class="sep"></div>
+	</div>
+</div>
