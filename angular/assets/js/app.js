@@ -10,7 +10,10 @@ app.config(['$routeProvider', function($routeProvider) {
 			templateUrl: 'partials/team.htm',
 			controller: "TeamsController"
 	    })
-	    .otherwise({ redirectTo: "/home" });
+	    .otherwise({
+			templateUrl: 'partials/index.htm',
+			controller: "HomeController"
+		});
 }]);
 
 
